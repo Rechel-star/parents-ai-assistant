@@ -96,7 +96,7 @@ st.markdown("""
 # ==========================================
 # 4. 接入 DeepSeek AI
 # ==========================================
-DEEPSEEK_API_KEY = "sk-f7ca32665ab74a6a94feb2314e8f3c30"
+DEEPSEEK_API_KEY = st.secrets["DEEPSEEK_API_KEY"]
 
 try:
     client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
